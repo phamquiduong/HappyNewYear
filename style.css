@@ -1,0 +1,106 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    -o-filter: blur(10px);
+    filter: blur(10px);
+    object-fit: cover;
+    transform: scale(1.04);
+    z-index: -1;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    width: 200px;
+}
+
+select option {
+    background-color: black;
+}
+
+#name {
+    display: block;
+    padding: 50px 0px 0px;
+}
+
+.time {
+    display: inline-block;
+    border: 1px rgb(133, 133, 133) solid;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#bg-text {
+    width: 800px;
+    height: 350px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: xx-large;
+    margin: 50vh auto 0px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(31, 31, 31);
+}
+
+#center_element {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.text {
+    display: block;
+    font-size: large;
+}
+
+#change_day {
+    position: fixed;
+    color: white;
+    z-index: 2;
+}
+
+#date{
+    font-size: medium;
+}
+
+@media only screen and (max-width: 800px) {
+    #bg-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #bg-text {
+        font-size: larger;
+    }
+
+    #date {
+        font-size: small;
+    }
+
+    .time {
+        padding: 30px 20px;
+        margin: 30px 5px;
+    }
+}
