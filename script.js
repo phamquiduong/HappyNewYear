@@ -5,7 +5,7 @@ const second_of_minute = 60;
 
 
 function init() {
-    const event_time = new Date(2022, 1, 1, 0, 0, 0, 0);
+    const event_time = new Date(2023, 0, 22, 0, 0, 0, 0);
     loop (Math.floor(Math.abs(event_time - Date.now())/1000));
 }
 
