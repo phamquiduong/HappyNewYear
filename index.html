@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body onload="init()">
     <video autoplay muted loop id="myVideo">
         <source src="./static/background.mp4" type="video/mp4">
@@ -21,7 +23,7 @@
     <div id='center_element'>
         <div id='bg-text'>
             <label>
-                <span id='name'>NĂM MỚI 2023</span>
+                <span id='name'>NĂM MỚI <span id='year'></span></span>
                 <span id='date'>Hi vọng một năm mới tốt đẹp sẽ đến, hóng thôi 🤣</span> <br>
                 <div class="time"><span id='day'></span> <label class='text'>ngày</label></div>
                 <div class="time"><span id='hour'></span> <label class='text'>giờ</label></div>
@@ -31,4 +33,5 @@
         </div>
     </div>
 </body>
+
 </html>
